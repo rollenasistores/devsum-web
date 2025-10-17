@@ -3,14 +3,16 @@
 import { motion } from "framer-motion"
 import { useState, useEffect } from "react"
 import { usePathname } from "next/navigation"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export function GlobalCursor() {
   const [mousePosition, setMousePosition] = useState({ x: 50, y: 50 })
   const [mounted, setMounted] = useState(false)
   const pathname = usePathname()
+  const isMobile = useIsMobile()
 
-  // Only show custom cursor on the main page
-  const shouldShowCustomCursor = pathname === '/'
+  // Only show custom cursor on the main page and not on mobile
+  const shouldShowCustomCursor = pathname === '/' && !isMobile
 
   useEffect(() => {
     setMounted(true)

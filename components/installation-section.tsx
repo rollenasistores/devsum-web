@@ -8,8 +8,8 @@ import { scrollReveal, staggerChildren, tabContent, typewriter } from "@/lib/ani
 
 export function InstallationSection() {
   return (
-    <section id="installation" className="border-b border-border bg-secondary/30 py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section id="installation" className="border-b border-border bg-secondary/30 py-16 sm:py-24 lg:py-32">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div 
           className="mx-auto max-w-2xl text-center"
           variants={scrollReveal}
@@ -17,12 +17,12 @@ export function InstallationSection() {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Get started in seconds</h2>
-          <p className="mt-4 text-lg text-muted-foreground">Install DevSum CLI with your favorite package manager</p>
+          <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl">Get started in seconds</h2>
+          <p className="mt-3 text-base text-muted-foreground sm:mt-4 sm:text-lg">Install DevSum CLI with your favorite package manager</p>
         </motion.div>
 
         <motion.div 
-          className="mx-auto mt-16 max-w-3xl"
+          className="mx-auto mt-12 max-w-3xl sm:mt-16"
           variants={scrollReveal}
           initial="hidden"
           whileInView="visible"

@@ -1,9 +1,10 @@
 import { Header } from "@/components/header"
 import { ExamplesGallery } from "@/components/examples-gallery"
+import { InteractiveTerminal } from "@/components/interactive-terminal"
 import { Card } from "@/components/ui/card"
 import { CodeBlock } from "@/components/ui/code-block"
 import { Badge } from "@/components/ui/badge"
-import { Terminal, FileText, BarChart3, Zap } from "lucide-react"
+import { Terminal, FileText, BarChart3, Zap, Play } from "lucide-react"
 
 export default function ExamplesPage() {
   return (
@@ -56,6 +57,64 @@ devsum commit --include "*.ts,*.tsx"`}
                 />
               </Card>
             </div>
+          </section>
+
+          {/* Interactive Terminal */}
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
+              <Play className="h-8 w-8 text-primary" />
+              Try It Yourself - Interactive Terminal
+            </h2>
+            
+            <Card className="p-6 mb-6">
+              <div className="space-y-4">
+                <p className="text-muted-foreground">
+                  Experience DevSum CLI in action! Type commands below to see realistic outputs. 
+                  All responses are pre-generated examples to demonstrate the tool's capabilities.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <Badge variant="outline" className="text-xs">
+                    💡 Use ↑/↓ arrows for command history
+                  </Badge>
+                  <Badge variant="outline" className="text-xs">
+                    ⌨️ Press Tab for autocomplete
+                  </Badge>
+                  <Badge variant="outline" className="text-xs">
+                    🧹 Ctrl+L to clear terminal
+                  </Badge>
+                  <Badge variant="outline" className="text-xs">
+                    📱 Mobile-friendly controls
+                  </Badge>
+                </div>
+              </div>
+            </Card>
+
+            <InteractiveTerminal className="mb-6" />
+            
+            <Card className="p-6 bg-muted/50">
+              <h3 className="text-lg font-semibold mb-3 flex items-center gap-2">
+                <Terminal className="h-5 w-5" />
+                Quick Start Commands
+              </h3>
+              <div className="grid gap-3 md:grid-cols-2">
+                <div className="space-y-2">
+                  <h4 className="font-medium text-sm">Basic Commands</h4>
+                  <div className="space-y-1 text-sm font-mono">
+                    <div className="text-muted-foreground">$ devsum --help</div>
+                    <div className="text-muted-foreground">$ devsum --version</div>
+                    <div className="text-muted-foreground">$ devsum report --help</div>
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  <h4 className="font-medium text-sm">Report Examples</h4>
+                  <div className="space-y-1 text-sm font-mono">
+                    <div className="text-muted-foreground">$ devsum report --since 7d</div>
+                    <div className="text-muted-foreground">$ devsum report --format json</div>
+                    <div className="text-muted-foreground">$ devsum analyze --since 7d --light</div>
+                  </div>
+                </div>
+              </div>
+            </Card>
           </section>
 
           {/* Output Examples */}
@@ -180,7 +239,6 @@ curl -X POST -H 'Content-type: application/json' \\
               <CodeBlock
                 language="bash"
                 code="npm install -g @rollenasistores/devsum"
-                className="text-left"
               />
               <a
                 href="/docs"

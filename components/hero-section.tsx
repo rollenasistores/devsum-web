@@ -20,7 +20,7 @@ export function HeroSection() {
       {/* Additional gradient overlay for better text contrast */}
       <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-transparent to-background/30" />
 
-      <div className="relative mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
+      <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
         <motion.div 
           className="mx-auto max-w-2xl text-center"
           variants={staggerContainer}
@@ -32,7 +32,7 @@ export function HeroSection() {
           </motion.div>
 
               <motion.h1
-                className="text-5xl font-bold tracking-tight text-foreground sm:text-7xl text-balance"
+                className="text-3xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-7xl text-balance"
                 variants={fadeInUp}
               >
                   <TypewriterText
@@ -47,7 +47,7 @@ export function HeroSection() {
               </motion.h1>
 
           <motion.p 
-            className="mt-6 text-lg leading-relaxed text-muted-foreground text-pretty"
+            className="mt-4 text-base leading-relaxed text-muted-foreground text-pretty sm:mt-6 sm:text-lg"
             variants={fadeInUp}
           >
             DevSum CLI uses AI to analyze your git history and generate polished accomplishment summaries. Perfect for
@@ -55,7 +55,7 @@ export function HeroSection() {
           </motion.p>
 
           <motion.div 
-            className="mt-10 flex items-center justify-center gap-4"
+            className="mt-8 flex flex-col items-center justify-center gap-3 sm:mt-10 sm:flex-row sm:gap-4"
             variants={staggerChildren}
           >
             <motion.div variants={hoverScale}>
@@ -87,7 +87,7 @@ export function HeroSection() {
           </motion.div>
 
           <motion.div 
-            className="mt-8 flex items-center justify-center gap-6 text-sm text-muted-foreground"
+            className="mt-6 flex flex-wrap items-center justify-center gap-4 text-xs text-muted-foreground sm:mt-8 sm:gap-6 sm:text-sm"
             variants={staggerChildren}
           >
             <motion.div 
@@ -127,7 +127,7 @@ export function HeroSection() {
         </motion.div>
 
         <motion.div 
-          className="mx-auto mt-16 max-w-4xl"
+          className="mx-auto mt-8 max-w-4xl sm:mt-16"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

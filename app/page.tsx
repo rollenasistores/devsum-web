@@ -25,7 +25,7 @@ export default function Page() {
   return (
     <>
       {isLoading && <Loading onComplete={handleLoadingComplete} />}
-      <main className={`min-h-screen custom-cursor-page transition-opacity duration-500 ${isLoading ? 'opacity-0' : 'opacity-100'}`}>
+      <main className={`min-h-screen transition-opacity duration-500 ${isLoading ? 'opacity-0' : 'opacity-100'}`}>
         <ScrollProgress />
         <Header />
         <HeroSection />

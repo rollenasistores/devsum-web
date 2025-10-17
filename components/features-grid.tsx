@@ -40,8 +40,8 @@ const features = [
 
 export function FeaturesGrid() {
   return (
-    <section className="border-b border-border bg-background py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section className="border-b border-border bg-background py-16 sm:py-24 lg:py-32">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div 
           className="mx-auto max-w-2xl text-center"
           variants={scrollReveal}
@@ -49,16 +49,16 @@ export function FeaturesGrid() {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl">
             Everything you need to summarize your work
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground">
+          <p className="mt-3 text-base text-muted-foreground sm:mt-4 sm:text-lg">
             Powerful features designed for developers who value their time
           </p>
         </motion.div>
 
         <motion.div 
-          className="mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          className="mx-auto mt-12 grid max-w-6xl grid-cols-1 gap-4 sm:mt-16 sm:gap-6 lg:grid-cols-3"
           variants={staggerCards}
           initial="hidden"
           whileInView="visible"

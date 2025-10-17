@@ -19,7 +19,7 @@ export function Header() {
         opacity: headerOpacity
       }}
     >
-      <div className="container mx-auto max-w-7xl px-6 flex h-full items-center justify-between">
+      <div className="container mx-auto max-w-7xl px-4 flex h-full items-center justify-between sm:px-6">
         <motion.div
           style={{ scale: logoScale }}
           initial={{ opacity: 0, x: -20 }}
@@ -33,7 +33,7 @@ export function Header() {
             >
               <Terminal className="h-6 w-6 text-primary" />
             </motion.div>
-            <span className="font-bold text-xl">DevSum CLI</span>
+            <span className="font-bold text-lg sm:text-xl">DevSum CLI</span>
           </Link>
         </motion.div>
 
@@ -70,7 +70,7 @@ export function Header() {
         </motion.nav>
 
         <motion.div 
-          className="flex items-center gap-3"
+          className="flex items-center gap-2 sm:gap-3"
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}

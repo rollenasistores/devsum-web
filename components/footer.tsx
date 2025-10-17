@@ -7,10 +7,10 @@ import { scrollReveal, staggerChildren, hoverScale } from "@/lib/animations"
 
 export function Footer() {
   return (
-    <footer className="bg-background py-12">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <footer className="bg-background py-8 sm:py-12">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div 
-          className="grid grid-cols-1 gap-8 lg:grid-cols-4"
+          className="grid grid-cols-1 gap-6 sm:gap-8 lg:grid-cols-4"
           variants={staggerChildren}
           initial="hidden"
           whileInView="visible"
@@ -33,12 +33,12 @@ export function Footer() {
               </motion.div>
               <span className="text-lg font-bold text-foreground">DevSum CLI</span>
             </motion.div>
-            <p className="mt-4 max-w-md text-sm leading-relaxed text-muted-foreground">
+            <p className="mt-3 max-w-md text-xs leading-relaxed text-muted-foreground sm:mt-4 sm:text-sm">
               Transform your git commits into professional accomplishment reports with AI. Open source and built for
               developers.
             </p>
             <motion.div 
-              className="mt-6 flex items-center gap-4"
+              className="mt-4 flex items-center gap-3 sm:mt-6 sm:gap-4"
               variants={staggerChildren}
             >
               <motion.div variants={hoverScale}>
@@ -174,7 +174,7 @@ export function Footer() {
         </motion.div>
 
         <motion.div 
-          className="mt-12 border-t border-border pt-8 text-center text-sm text-muted-foreground"
+          className="mt-8 border-t border-border pt-6 text-center text-xs text-muted-foreground sm:mt-12 sm:pt-8 sm:text-sm"
           variants={scrollReveal}
           initial="hidden"
           whileInView="visible"

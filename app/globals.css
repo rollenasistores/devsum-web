@@ -131,6 +131,16 @@
     cursor: none !important;
   }
 
+  /* Show cursor on mobile devices */
+  @media (max-width: 767px) {
+    .custom-cursor-page {
+      cursor: auto !important;
+    }
+    .custom-cursor-page * {
+      cursor: auto !important;
+    }
+  }
+
   /* Custom scrollbar styles */
   ::-webkit-scrollbar {
     width: 8px;
