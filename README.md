@@ -28,31 +28,35 @@ For more information about the CLI tool, visit the [main DevSum repository](http
 DevSum CLI is a powerful command-line tool that automatically generates professional accomplishment reports from your git commit history using AI. Perfect for:
 
 - 📊 **Performance Reviews** - Showcase your technical contributions
-- 🎯 **Sprint Reports** - Summarize team accomplishments  
+- 🎯 **Sprint Reports** - Summarize team accomplishments
 - 📝 **Project Updates** - Keep stakeholders informed
 - 🏆 **Portfolio Building** - Document your development journey
 
 ## ✨ Features
 
 ### 🤖 AI-Powered Analysis
+
 - Smart commit summarization
 - Achievement extraction
 - Technical insight generation
 - Actionable recommendations
 
 ### 📊 Multiple Output Formats
+
 - Beautiful Markdown reports
 - Structured JSON data
 - HTML presentations (coming soon)
 - PDF exports (coming soon)
 
 ### ⚙️ Flexible Filtering
+
 - Date range selection
 - Author-specific reports
 - Branch filtering
 - Custom time periods
 
 ### 🌟 Developer Experience
+
 - Interactive setup wizard
 - Beautiful terminal UI
 - Comprehensive error handling

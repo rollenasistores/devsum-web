@@ -6,7 +6,7 @@ Thank you for your interest in contributing to DevSum Web! This document provide
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - npm, yarn, or pnpm
 - Git
 
@@ -14,12 +14,14 @@ Thank you for your interest in contributing to DevSum Web! This document provide
 
 1. Fork the repository
 2. Clone your fork:
+
    ```bash
    git clone https://github.com/your-username/devsum-web.git
    cd devsum-web
    ```
 
 3. Install dependencies:
+
    ```bash
    npm install
    # or
@@ -29,6 +31,7 @@ Thank you for your interest in contributing to DevSum Web! This document provide
    ```
 
 4. Set up environment variables:
+
    ```bash
    cp .env.example .env
    # Edit .env with your configuration
@@ -68,6 +71,7 @@ Thank you for your interest in contributing to DevSum Web! This document provide
 ## 📝 Making Changes
 
 1. Create a feature branch:
+
    ```bash
    git checkout -b feature/your-feature-name
    ```
@@ -75,11 +79,13 @@ Thank you for your interest in contributing to DevSum Web! This document provide
 2. Make your changes
 3. Test your changes thoroughly
 4. Commit your changes:
+
    ```bash
    git commit -m "Add: your feature description"
    ```
 
 5. Push to your fork:
+
    ```bash
    git push origin feature/your-feature-name
    ```
