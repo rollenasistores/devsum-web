@@ -7,8 +7,8 @@ import { scrollReveal, tabContent, hoverLift } from "@/lib/animations"
 
 export function CommandReference() {
   return (
-    <section id="commands" className="border-b border-border bg-background py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section id="commands" className="border-b border-border bg-background py-12 sm:py-16 lg:py-24 xl:py-32">
+      <div className="mx-auto max-w-7xl px-3 sm:px-4 lg:px-6">
         <motion.div 
           className="mx-auto max-w-2xl text-center"
           variants={scrollReveal}
@@ -16,12 +16,12 @@ export function CommandReference() {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Command reference</h2>
-          <p className="mt-4 text-lg text-muted-foreground">Complete guide to all available commands and options</p>
+          <h2 className="text-xl font-bold tracking-tight text-foreground sm:text-2xl md:text-3xl lg:text-4xl">Command reference</h2>
+          <p className="mt-2 text-sm text-muted-foreground sm:mt-3 sm:text-base lg:text-lg">Complete guide to all available commands and options</p>
         </motion.div>
 
         <motion.div 
-          className="mx-auto mt-16 max-w-4xl"
+          className="mx-auto mt-8 max-w-4xl sm:mt-12 lg:mt-16"
           variants={scrollReveal}
           initial="hidden"
           whileInView="visible"
@@ -34,11 +34,11 @@ export function CommandReference() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <TabsList className="grid w-full grid-cols-4">
-                <TabsTrigger value="analyze">analyze</TabsTrigger>
-                <TabsTrigger value="config">config</TabsTrigger>
-                <TabsTrigger value="export">export</TabsTrigger>
-                <TabsTrigger value="help">help</TabsTrigger>
+              <TabsList className="grid w-full grid-cols-2 sm:grid-cols-4 h-9 sm:h-10">
+                <TabsTrigger value="analyze" className="text-xs sm:text-sm">analyze</TabsTrigger>
+                <TabsTrigger value="config" className="text-xs sm:text-sm">config</TabsTrigger>
+                <TabsTrigger value="export" className="text-xs sm:text-sm">export</TabsTrigger>
+                <TabsTrigger value="help" className="text-xs sm:text-sm">help</TabsTrigger>
               </TabsList>
             </motion.div>
 

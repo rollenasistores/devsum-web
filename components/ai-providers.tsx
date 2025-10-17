@@ -32,8 +32,8 @@ const providers = [
 
 export function AIProviders() {
   return (
-    <section className="border-b border-border bg-secondary/30 py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section className="border-b border-border bg-secondary/30 py-12 sm:py-16 lg:py-24 xl:py-32">
+      <div className="mx-auto max-w-7xl px-3 sm:px-4 lg:px-6">
         <motion.div 
           className="mx-auto max-w-2xl text-center"
           variants={scrollReveal}
@@ -41,12 +41,12 @@ export function AIProviders() {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Choose your AI provider</h2>
-          <p className="mt-4 text-lg text-muted-foreground">DevSum works with the leading AI models</p>
+          <h2 className="text-xl font-bold tracking-tight text-foreground sm:text-2xl md:text-3xl lg:text-4xl">Choose your AI provider</h2>
+          <p className="mt-2 text-sm text-muted-foreground sm:mt-3 sm:text-base lg:text-lg">DevSum works with the leading AI models</p>
         </motion.div>
 
         <motion.div 
-          className="mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-8 lg:grid-cols-3"
+          className="mx-auto mt-8 grid max-w-6xl grid-cols-1 gap-4 sm:mt-12 sm:gap-6 lg:mt-16 lg:grid-cols-3 lg:gap-8"
           variants={staggerCards}
           initial="hidden"
           whileInView="visible"

@@ -122,7 +122,18 @@
   }
   body {
     @apply bg-background text-foreground;
+    /* Mobile-first font size and line height */
+    font-size: 14px;
+    line-height: 1.5;
   }
+
+  /* Mobile-first responsive typography */
+  @media (min-width: 640px) {
+    body {
+      font-size: 16px;
+    }
+  }
+
   /* Hide default cursor only on the main page when custom cursor is active */
   .custom-cursor-page {
     cursor: none !important;
@@ -139,6 +150,35 @@
     .custom-cursor-page * {
       cursor: auto !important;
     }
+  }
+
+  /* Mobile-first container improvements */
+  .container {
+    @apply px-3 sm:px-4 lg:px-6;
+  }
+
+  /* Mobile-first spacing utilities */
+  .mobile-padding {
+    @apply px-3 py-4 sm:px-4 sm:py-6 lg:px-6 lg:py-8;
+  }
+
+  /* Mobile-first text sizing */
+  .mobile-text {
+    @apply text-sm sm:text-base lg:text-lg;
+  }
+
+  .mobile-heading {
+    @apply text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl;
+  }
+
+  /* Mobile-first button improvements */
+  .mobile-button {
+    @apply w-full sm:w-auto;
+  }
+
+  /* Mobile-first grid improvements */
+  .mobile-grid {
+    @apply grid-cols-1 sm:grid-cols-2 lg:grid-cols-3;
   }
 
   /* Custom scrollbar styles */
