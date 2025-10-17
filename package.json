@@ -1,7 +1,25 @@
 {
   "name": "devsum-web",
   "version": "1.0.0",
+  "description": "Web documentation and landing page for DevSum CLI",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rollenasistores/devsum-web.git"
+  },
+  "homepage": "https://github.com/rollenasistores/devsum-web#readme",
+  "bugs": {
+    "url": "https://github.com/rollenasistores/devsum-web/issues"
+  },
+  "keywords": [
+    "devsum",
+    "git",
+    "commits",
+    "ai",
+    "documentation",
+    "nextjs",
+    "typescript"
+  ],
   "scripts": {
     "build": "npx prisma generate && next build",
     "dev": "next dev",

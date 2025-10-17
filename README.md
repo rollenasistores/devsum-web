@@ -1,8 +1,9 @@
-# DevSum CLI - Web Documentation
+# DevSum Web
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/rollenasistores/devsum)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/rollenasistores/devsum/blob/main/LICENSE)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/rollenasistores/devsum-web)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/rollenasistores/devsum-web/blob/main/LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-15.2.4-black?logo=next.js)](https://nextjs.org/)
 
 > Transform your git commits into professional accomplishment reports with the power of AI
 
@@ -11,6 +12,16 @@ This is the web documentation and landing page for DevSum CLI, a powerful comman
 ## 🚀 Quick Start
 
 Visit the live documentation at: [https://devsum.vercel.app](https://devsum.vercel.app)
+
+### For the CLI Tool
+
+The DevSum CLI tool is available as a separate package. Install it with:
+
+```bash
+npm install -g @rollenasistores/devsum
+```
+
+For more information about the CLI tool, visit the [main DevSum repository](https://github.com/rollenasistores/devsum).
 
 ## 🎯 What is DevSum?
 
@@ -92,7 +103,7 @@ devsum setup
 
 ## 🤝 Contributing
 
-We welcome contributions! Please see our [Contributing Guide](https://github.com/rollenasistores/devsum/blob/main/CONTRIBUTING.md) for details.
+We welcome contributions! Please see our [Contributing Guide](https://github.com/rollenasistores/devsum-web/blob/main/CONTRIBUTING.md) for details.
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
@@ -102,7 +113,7 @@ We welcome contributions! Please see our [Contributing Guide](https://github.com
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/rollenasistores/devsum/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/rollenasistores/devsum-web/blob/main/LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
@@ -114,8 +125,8 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 ## 📞 Support
 
 - 📧 Email: support@devsum.dev
-- 🐛 Issues: [GitHub Issues](https://github.com/rollenasistores/devsum/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/rollenasistores/devsum/discussions)
+- 🐛 Issues: [GitHub Issues](https://github.com/rollenasistores/devsum-web/issues)
+- 💬 Discussions: [GitHub Discussions](https://github.com/rollenasistores/devsum-web/discussions)
 
 ---
 
