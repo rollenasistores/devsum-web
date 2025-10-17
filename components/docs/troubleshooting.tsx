@@ -51,7 +51,7 @@ export function Troubleshooting() {
     <section id="troubleshooting" className="scroll-mt-20">
       <div className="space-y-6">
         <div>
-          <h2 className="text-3xl font-bold tracking-tight">Troubleshooting</h2>
+          <h2 id="troubleshooting-overview" className="text-3xl font-bold tracking-tight scroll-mt-20">Troubleshooting</h2>
           <p className="mt-4 text-muted-foreground">
             Common issues and their solutions to help you get back on track quickly.
           </p>
@@ -101,7 +101,7 @@ export function Troubleshooting() {
         </div>
 
         <Card className="p-6 bg-accent/5 border-accent/20">
-          <h3 className="text-lg font-semibold mb-4">Enable Debug Mode</h3>
+          <h3 id="enable-debug-mode" className="text-lg font-semibold mb-4 scroll-mt-20">Enable Debug Mode</h3>
           <p className="text-muted-foreground mb-4">
             For detailed error information, run DevSum CLI with debug logging enabled:
           </p>

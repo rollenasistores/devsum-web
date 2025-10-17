@@ -9,7 +9,7 @@ export function AIProvidersSetup() {
     <section id="ai-providers" className="scroll-mt-20">
       <div className="space-y-6">
         <div>
-          <h2 className="text-3xl font-bold tracking-tight">AI Providers Setup</h2>
+          <h2 id="ai-providers-overview" className="text-3xl font-bold tracking-tight scroll-mt-20">AI Providers Setup</h2>
           <p className="mt-4 text-muted-foreground">
             DevSum CLI supports multiple AI providers. Choose the one that best fits your needs.
           </p>
@@ -24,7 +24,7 @@ export function AIProvidersSetup() {
 
           <TabsContent value="gemini" className="space-y-4">
             <Card className="p-6">
-              <h3 className="text-xl font-semibold mb-4">Google Gemini</h3>
+              <h3 id="google-gemini" className="text-xl font-semibold mb-4 scroll-mt-20">Google Gemini</h3>
               <p className="text-muted-foreground mb-4">
                 Fast, cost-effective, and powerful. Recommended for most users.
               </p>
@@ -67,7 +67,7 @@ devsum config set model gemini-2.0-flash`}
 
           <TabsContent value="claude" className="space-y-4">
             <Card className="p-6">
-              <h3 className="text-xl font-semibold mb-4">Anthropic Claude</h3>
+              <h3 id="anthropic-claude" className="text-xl font-semibold mb-4 scroll-mt-20">Anthropic Claude</h3>
               <p className="text-muted-foreground mb-4">
                 Excellent reasoning and detailed analysis. Great for complex codebases.
               </p>
@@ -113,7 +113,7 @@ devsum config set model claude-3-5-sonnet`}
 
           <TabsContent value="openai" className="space-y-4">
             <Card className="p-6">
-              <h3 className="text-xl font-semibold mb-4">OpenAI</h3>
+              <h3 id="openai" className="text-xl font-semibold mb-4 scroll-mt-20">OpenAI</h3>
               <p className="text-muted-foreground mb-4">
                 Industry standard with excellent performance. Widely used and reliable.
               </p>

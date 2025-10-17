@@ -63,7 +63,7 @@ export function CommandsReference() {
     <section id="commands" className="scroll-mt-20">
       <div className="space-y-6">
         <div>
-          <h2 className="text-3xl font-bold tracking-tight">Commands Reference</h2>
+          <h2 id="commands-overview" className="text-3xl font-bold tracking-tight scroll-mt-20">Commands Reference</h2>
           <p className="mt-4 text-muted-foreground">
             Complete reference for all DevSum CLI commands and their options.
           </p>

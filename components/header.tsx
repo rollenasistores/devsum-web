@@ -61,7 +61,7 @@ export function Header() {
           </motion.div>
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Link
-              href="/#examples"
+              href="/examples"
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
               Examples

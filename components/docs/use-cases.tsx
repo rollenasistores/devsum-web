@@ -38,7 +38,7 @@ export function UseCases() {
     <section id="use-cases" className="scroll-mt-20">
       <div className="space-y-6">
         <div>
-          <h2 className="text-3xl font-bold tracking-tight">Use Cases</h2>
+          <h2 id="use-cases-overview" className="text-3xl font-bold tracking-tight scroll-mt-20">Use Cases</h2>
           <p className="mt-4 text-muted-foreground">
             Discover how DevSum CLI can streamline your development workflow and reporting.
           </p>

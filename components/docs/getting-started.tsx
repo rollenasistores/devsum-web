@@ -38,19 +38,19 @@ export function GettingStarted() {
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold">Quick Start</h2>
+          <h2 id="quick-start" className="text-2xl font-bold scroll-mt-20">Quick Start</h2>
           <p className="text-muted-foreground">
             Install DevSum CLI globally and start generating professional commit messages in seconds.
           </p>
 
           <div className="space-y-4">
             <div>
-              <h3 className="text-lg font-semibold mb-2">1. Install DevSum CLI</h3>
+              <h3 id="install-devsum-cli" className="text-lg font-semibold mb-2 scroll-mt-20">1. Install DevSum CLI</h3>
               <CodeBlock language="bash" code="npm install -g @rollenasistores/devsum" />
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold mb-2">2. Configure AI Provider</h3>
+              <h3 id="configure-ai-provider" className="text-lg font-semibold mb-2 scroll-mt-20">2. Configure AI Provider</h3>
               <CodeBlock
                 language="bash"
                 code={`# Set your API key (example with Gemini)
@@ -63,7 +63,7 @@ devsum config set apiKey your-api-key-here`}
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold mb-2">3. Generate Your First Commit</h3>
+              <h3 id="generate-first-commit" className="text-lg font-semibold mb-2 scroll-mt-20">3. Generate Your First Commit</h3>
               <CodeBlock
                 language="bash"
                 code={`# Navigate to your git repository

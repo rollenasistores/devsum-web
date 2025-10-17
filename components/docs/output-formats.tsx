@@ -70,7 +70,7 @@ export function OutputFormats() {
     <section id="output-formats" className="scroll-mt-20">
       <div className="space-y-6">
         <div>
-          <h2 className="text-3xl font-bold tracking-tight">Output Formats</h2>
+          <h2 id="output-formats-overview" className="text-3xl font-bold tracking-tight scroll-mt-20">Output Formats</h2>
           <p className="mt-4 text-muted-foreground">
             DevSum CLI supports multiple output formats to fit your workflow and reporting needs.
           </p>

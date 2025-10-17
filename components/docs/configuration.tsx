@@ -8,12 +8,12 @@ export function Configuration() {
     <section id="configuration" className="scroll-mt-20">
       <div className="space-y-6">
         <div>
-          <h2 className="text-3xl font-bold tracking-tight">Configuration</h2>
+          <h2 id="configuration-overview" className="text-3xl font-bold tracking-tight scroll-mt-20">Configuration</h2>
           <p className="mt-4 text-muted-foreground">Configure DevSum CLI to match your workflow and preferences.</p>
         </div>
 
         <div className="space-y-4">
-          <h3 className="text-xl font-semibold">Configuration File</h3>
+          <h3 id="configuration-file" className="text-xl font-semibold scroll-mt-20">Configuration File</h3>
           <p className="text-muted-foreground">
             DevSum CLI looks for a <code>.devsumrc.json</code> file in your project root or home directory.
           </p>
@@ -34,7 +34,7 @@ export function Configuration() {
         </div>
 
         <div className="space-y-4">
-          <h3 className="text-xl font-semibold">Configuration Options</h3>
+          <h3 id="configuration-options" className="text-xl font-semibold scroll-mt-20">Configuration Options</h3>
           <div className="space-y-4">
             <Card className="p-4">
               <h4 className="font-semibold mb-2">provider</h4>
@@ -79,7 +79,7 @@ export function Configuration() {
         </Alert>
 
         <div className="space-y-4">
-          <h3 className="text-xl font-semibold">Environment Variables</h3>
+          <h3 id="environment-variables" className="text-xl font-semibold scroll-mt-20">Environment Variables</h3>
           <CodeBlock
             language="bash"
             code={`# AI Provider API Keys

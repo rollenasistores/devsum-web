@@ -8,7 +8,7 @@ export function Installation() {
     <section id="installation" className="scroll-mt-20">
       <div className="space-y-6">
         <div>
-          <h2 className="text-3xl font-bold tracking-tight">Installation</h2>
+          <h2 id="installation-methods" className="text-3xl font-bold tracking-tight scroll-mt-20">Installation</h2>
           <p className="mt-4 text-muted-foreground">Choose your preferred package manager to install DevSum CLI.</p>
         </div>
 
@@ -39,7 +39,7 @@ export function Installation() {
         </Tabs>
 
         <div className="space-y-4">
-          <h3 className="text-xl font-semibold">System Requirements</h3>
+          <h3 id="system-requirements" className="text-xl font-semibold scroll-mt-20">System Requirements</h3>
           <Card className="p-6">
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
@@ -68,7 +68,7 @@ export function Installation() {
         </div>
 
         <div className="space-y-4">
-          <h3 className="text-xl font-semibold">Verify Installation</h3>
+          <h3 id="verify-installation" className="text-xl font-semibold scroll-mt-20">Verify Installation</h3>
           <CodeBlock
             language="bash"
             code={`# Check version
