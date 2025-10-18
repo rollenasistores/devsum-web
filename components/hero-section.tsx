@@ -127,7 +127,7 @@ export function HeroSection() {
         </motion.div>
 
         <motion.div 
-          className="mx-auto mt-4 max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-3xl xl:max-w-4xl sm:mt-8 lg:mt-12 xl:mt-16 mt-10"
+          className="mx-auto max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-3xl xl:max-w-4xl sm:mt-8 lg:mt-12 xl:mt-16 mt-10"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
