@@ -16,7 +16,7 @@ export function UsageExamples() {
           viewport={{ once: true }}
         >
           <h2 className="text-xl font-bold tracking-tight text-foreground sm:text-2xl md:text-3xl lg:text-4xl">Simple, powerful commands</h2>
-          <p className="mt-2 text-sm text-muted-foreground sm:mt-3 sm:text-base lg:text-lg">Generate reports with a single command</p>
+          <p className="mt-2 text-sm text-muted-foreground sm:mt-3 sm:text-base lg:text-lg">Automate your workflow and generate reports with a single command</p>
         </motion.div>
 
         <motion.div 
@@ -27,7 +27,7 @@ export function UsageExamples() {
           viewport={{ once: true }}
         >
           <motion.div variants={staggerChildren}>
-            <h3 className="mb-3 text-base font-semibold text-foreground sm:mb-4 sm:text-lg">Basic usage</h3>
+            <h3 className="mb-3 text-base font-semibold text-foreground sm:mb-4 sm:text-lg">AI-powered commit</h3>
             <motion.div
               variants={hoverLift}
               whileHover="hover"
@@ -36,16 +36,17 @@ export function UsageExamples() {
                 <div className="space-y-1.5 sm:space-y-2 font-mono text-xs sm:text-sm">
                   <div className="flex items-start gap-2">
                     <span className="text-accent">$</span>
-                    <span className="text-foreground break-all">devsum analyze</span>
+                    <span className="text-foreground break-all">devsum commit --auto</span>
                   </div>
-                  <div className="ml-4 text-muted-foreground">✓ Analyzing commits from the last 30 days...</div>
+                  <div className="ml-4 text-muted-foreground">✓ Generated branch: feat/user-authentication</div>
+                  <div className="ml-4 text-muted-foreground">✓ Created commit: feat: implement user authentication system</div>
                 </div>
               </TerminalWindow>
             </motion.div>
           </motion.div>
 
           <motion.div variants={staggerChildren}>
-            <h3 className="mb-3 text-base font-semibold text-foreground sm:mb-4 sm:text-lg">Custom date range</h3>
+            <h3 className="mb-3 text-base font-semibold text-foreground sm:mb-4 sm:text-lg">Branch management</h3>
             <motion.div
               variants={hoverLift}
               whileHover="hover"
@@ -54,16 +55,17 @@ export function UsageExamples() {
                 <div className="space-y-1.5 sm:space-y-2 font-mono text-xs sm:text-sm">
                   <div className="flex items-start gap-2">
                     <span className="text-accent">$</span>
-                    <span className="text-foreground break-all">devsum analyze --since="2024-01-01" --until="2024-03-31"</span>
+                    <span className="text-foreground break-all">devsum commit --branch feat/new-feature</span>
                   </div>
-                  <div className="ml-4 text-muted-foreground">✓ Analyzing Q1 2024 commits...</div>
+                  <div className="ml-4 text-muted-foreground">✓ Created and switched to: feat/new-feature</div>
+                  <div className="ml-4 text-muted-foreground">✓ Generated commit: feat: add new feature implementation</div>
                 </div>
               </TerminalWindow>
             </motion.div>
           </motion.div>
 
           <motion.div variants={staggerChildren}>
-            <h3 className="mb-3 text-base font-semibold text-foreground sm:mb-4 sm:text-lg">Export to PDF</h3>
+            <h3 className="mb-3 text-base font-semibold text-foreground sm:mb-4 sm:text-lg">Generate reports</h3>
             <motion.div
               variants={hoverLift}
               whileHover="hover"
@@ -72,9 +74,10 @@ export function UsageExamples() {
                 <div className="space-y-1.5 sm:space-y-2 font-mono text-xs sm:text-sm">
                   <div className="flex items-start gap-2">
                     <span className="text-accent">$</span>
-                    <span className="text-foreground break-all">devsum analyze --format=pdf --output=report.pdf</span>
+                    <span className="text-foreground break-all">devsum analyze --since="7d"</span>
                   </div>
-                  <div className="ml-4 text-muted-foreground">✓ Generated PDF report: report.pdf</div>
+                  <div className="ml-4 text-muted-foreground">✓ Analyzing commits from the last 7 days...</div>
+                  <div className="ml-4 text-muted-foreground">✓ Generated report: sprint-summary.md</div>
                 </div>
               </TerminalWindow>
             </motion.div>
