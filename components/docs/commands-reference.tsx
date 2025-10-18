@@ -61,34 +61,34 @@ const commands = [
 export function CommandsReference() {
   return (
     <section id="commands" className="scroll-mt-20">
-      <div className="space-y-6">
+      <div className="space-y-6 sm:space-y-8">
         <div>
-          <h2 id="commands-overview" className="text-3xl font-bold tracking-tight scroll-mt-20">Commands Reference</h2>
-          <p className="mt-4 text-muted-foreground">
+          <h2 id="commands-overview" className="text-2xl font-bold tracking-tight scroll-mt-20 sm:text-3xl">Commands Reference</h2>
+          <p className="mt-3 text-sm text-muted-foreground sm:mt-4 sm:text-base">
             Complete reference for all DevSum CLI commands and their options.
           </p>
         </div>
 
-        <div className="space-y-6">
+        <div className="space-y-4 sm:space-y-6">
           {commands.map((command) => (
-            <Card key={command.name} className="p-6">
-              <div className="space-y-4">
+            <Card key={command.name} className="p-4 sm:p-6">
+              <div className="space-y-3 sm:space-y-4">
                 <div>
-                  <div className="flex items-center gap-3 mb-2">
-                    <code className="text-lg font-semibold text-primary">{command.name}</code>
-                    <Badge variant="secondary">Command</Badge>
+                  <div className="flex flex-col gap-2 mb-2 sm:flex-row sm:items-center sm:gap-3">
+                    <code className="text-base font-semibold text-primary sm:text-lg break-all overflow-hidden">{command.name}</code>
+                    <Badge variant="secondary" className="w-fit text-xs shrink-0">Command</Badge>
                   </div>
-                  <p className="text-muted-foreground">{command.description}</p>
+                  <p className="text-sm text-muted-foreground sm:text-base">{command.description}</p>
                 </div>
 
                 {command.flags.length > 0 && (
                   <div>
-                    <h4 className="font-semibold mb-3">Flags & Options</h4>
+                    <h4 className="font-semibold mb-2 text-sm sm:text-base">Flags & Options</h4>
                     <div className="space-y-2">
                       {command.flags.map((flag) => (
-                        <div key={flag.flag} className="flex gap-4 text-sm">
-                          <code className="text-accent shrink-0 font-mono">{flag.flag}</code>
-                          <span className="text-muted-foreground">{flag.description}</span>
+                        <div key={flag.flag} className="flex flex-col gap-1 text-xs sm:flex-row sm:gap-4 sm:text-sm">
+                          <code className="text-accent shrink-0 font-mono text-xs break-all overflow-hidden sm:text-sm">{flag.flag}</code>
+                          <span className="text-muted-foreground text-xs sm:text-sm break-words">{flag.description}</span>
                         </div>
                       ))}
                     </div>
@@ -96,7 +96,7 @@ export function CommandsReference() {
                 )}
 
                 <div>
-                  <h4 className="font-semibold mb-2">Example</h4>
+                  <h4 className="font-semibold mb-2 text-sm sm:text-base">Example</h4>
                   <CodeBlock language="bash" code={command.example} />
                 </div>
               </div>

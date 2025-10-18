@@ -49,18 +49,18 @@ const issues = [
 export function Troubleshooting() {
   return (
     <section id="troubleshooting" className="scroll-mt-20">
-      <div className="space-y-6">
+      <div className="space-y-6 sm:space-y-8">
         <div>
-          <h2 id="troubleshooting-overview" className="text-3xl font-bold tracking-tight scroll-mt-20">Troubleshooting</h2>
-          <p className="mt-4 text-muted-foreground">
+          <h2 id="troubleshooting-overview" className="text-2xl font-bold tracking-tight scroll-mt-20 sm:text-3xl">Troubleshooting</h2>
+          <p className="mt-3 text-sm text-muted-foreground sm:mt-4 sm:text-base">
             Common issues and their solutions to help you get back on track quickly.
           </p>
         </div>
 
-        <Alert>
+        <Alert className="text-sm">
           <AlertCircle className="h-4 w-4" />
-          <AlertTitle>Need More Help?</AlertTitle>
-          <AlertDescription>
+          <AlertTitle className="text-sm sm:text-base">Need More Help?</AlertTitle>
+          <AlertDescription className="text-xs sm:text-sm">
             If you encounter an issue not listed here, please open an issue on{" "}
             <a href="https://github.com/rollenasistores/devsum/issues" className="underline">
               GitHub
@@ -69,26 +69,26 @@ export function Troubleshooting() {
           </AlertDescription>
         </Alert>
 
-        <div className="space-y-6">
+        <div className="space-y-4 sm:space-y-6">
           {issues.map((issue, index) => (
-            <Card key={index} className="p-6">
-              <div className="space-y-4">
+            <Card key={index} className="p-4 sm:p-6">
+              <div className="space-y-3 sm:space-y-4">
                 <div>
-                  <h3 className="text-lg font-semibold text-destructive mb-2 flex items-center gap-2">
-                    <AlertCircle className="h-5 w-5" />
+                  <h3 className="text-base font-semibold text-destructive mb-2 flex items-center gap-2 sm:text-lg">
+                    <AlertCircle className="h-4 w-4 sm:h-5 sm:w-5" />
                     {issue.problem}
                   </h3>
-                  <p className="text-muted-foreground">{issue.solution}</p>
+                  <p className="text-sm text-muted-foreground sm:text-base">{issue.solution}</p>
                 </div>
 
                 <div>
-                  <h4 className="font-semibold mb-3 flex items-center gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-accent" />
+                  <h4 className="font-semibold mb-2 flex items-center gap-2 text-sm sm:mb-3 sm:text-base">
+                    <CheckCircle2 className="h-3 w-3 text-accent sm:h-4 sm:w-4" />
                     Solution Steps
                   </h4>
-                  <ol className="space-y-2">
+                  <ol className="space-y-1.5 sm:space-y-2">
                     {issue.steps.map((step, stepIndex) => (
-                      <li key={stepIndex} className="flex gap-3 text-sm">
+                      <li key={stepIndex} className="flex gap-2 text-xs sm:gap-3 sm:text-sm">
                         <span className="font-semibold text-muted-foreground shrink-0">{stepIndex + 1}.</span>
                         <span className="text-muted-foreground">{step}</span>
                       </li>
@@ -100,9 +100,9 @@ export function Troubleshooting() {
           ))}
         </div>
 
-        <Card className="p-6 bg-accent/5 border-accent/20">
-          <h3 id="enable-debug-mode" className="text-lg font-semibold mb-4 scroll-mt-20">Enable Debug Mode</h3>
-          <p className="text-muted-foreground mb-4">
+        <Card className="p-4 bg-accent/5 border-accent/20 sm:p-6">
+          <h3 id="enable-debug-mode" className="text-base font-semibold mb-3 scroll-mt-20 sm:text-lg sm:mb-4">Enable Debug Mode</h3>
+          <p className="text-sm text-muted-foreground mb-3 sm:text-base sm:mb-4">
             For detailed error information, run DevSum CLI with debug logging enabled:
           </p>
           <CodeBlock language="bash" code="DEBUG=devsum:* devsum commit" />

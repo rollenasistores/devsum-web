@@ -125,6 +125,11 @@
     /* Mobile-first font size and line height */
     font-size: 14px;
     line-height: 1.5;
+    /* Prevent horizontal overflow */
+    overflow-x: hidden;
+  }
+  html {
+    overflow-x: hidden;
   }
 
   /* Mobile-first responsive typography */

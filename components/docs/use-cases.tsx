@@ -36,39 +36,39 @@ const useCases = [
 export function UseCases() {
   return (
     <section id="use-cases" className="scroll-mt-20">
-      <div className="space-y-6">
+      <div className="space-y-6 sm:space-y-8">
         <div>
-          <h2 id="use-cases-overview" className="text-3xl font-bold tracking-tight scroll-mt-20">Use Cases</h2>
-          <p className="mt-4 text-muted-foreground">
+          <h2 id="use-cases-overview" className="text-2xl font-bold tracking-tight scroll-mt-20 sm:text-3xl">Use Cases</h2>
+          <p className="mt-3 text-sm text-muted-foreground sm:mt-4 sm:text-base">
             Discover how DevSum CLI can streamline your development workflow and reporting.
           </p>
         </div>
 
-        <div className="grid gap-6 lg:grid-cols-2">
+        <div className="grid gap-4 sm:gap-6 lg:grid-cols-2">
           {useCases.map((useCase) => (
-            <Card key={useCase.title} className="p-6">
-              <div className="space-y-4">
-                <div className="flex items-start gap-4">
-                  <div className="rounded-lg bg-primary/10 p-3">
-                    <useCase.icon className="h-6 w-6 text-primary" />
+            <Card key={useCase.title} className="p-4 sm:p-6">
+              <div className="space-y-3 sm:space-y-4">
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <div className="rounded-lg bg-primary/10 p-2 sm:p-3">
+                    <useCase.icon className="h-5 w-5 text-primary sm:h-6 sm:w-6" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold mb-2">{useCase.title}</h3>
-                    <p className="text-muted-foreground text-sm">{useCase.description}</p>
+                    <h3 className="text-lg font-semibold mb-1 sm:mb-2 sm:text-xl">{useCase.title}</h3>
+                    <p className="text-xs text-muted-foreground sm:text-sm">{useCase.description}</p>
                   </div>
                 </div>
 
                 <div>
-                  <h4 className="font-semibold mb-2 text-sm">Example Command</h4>
+                  <h4 className="font-semibold mb-2 text-xs sm:text-sm">Example Command</h4>
                   <CodeBlock language="bash" code={useCase.example} />
                 </div>
 
                 <div>
-                  <h4 className="font-semibold mb-2 text-sm">Benefits</h4>
+                  <h4 className="font-semibold mb-2 text-xs sm:text-sm">Benefits</h4>
                   <ul className="space-y-1">
                     {useCase.benefits.map((benefit) => (
-                      <li key={benefit} className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <div className="h-1.5 w-1.5 rounded-full bg-accent" />
+                      <li key={benefit} className="flex items-center gap-2 text-xs text-muted-foreground sm:text-sm">
+                        <div className="h-1 w-1 rounded-full bg-accent sm:h-1.5 sm:w-1.5" />
                         {benefit}
                       </li>
                     ))}
