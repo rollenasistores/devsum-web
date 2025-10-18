@@ -68,29 +68,29 @@ const formats = [
 export function OutputFormats() {
   return (
     <section id="output-formats" className="scroll-mt-20">
-      <div className="space-y-6">
+      <div className="space-y-6 sm:space-y-8">
         <div>
-          <h2 id="output-formats-overview" className="text-3xl font-bold tracking-tight scroll-mt-20">Output Formats</h2>
-          <p className="mt-4 text-muted-foreground">
+          <h2 id="output-formats-overview" className="text-2xl font-bold tracking-tight scroll-mt-20 sm:text-3xl">Output Formats</h2>
+          <p className="mt-3 text-sm text-muted-foreground sm:mt-4 sm:text-base">
             DevSum CLI supports multiple output formats to fit your workflow and reporting needs.
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-4 sm:gap-6 sm:grid-cols-2">
           {formats.map((format) => (
-            <Card key={format.name} className="p-6">
-              <div className="space-y-4">
+            <Card key={format.name} className="p-4 sm:p-6">
+              <div className="space-y-3 sm:space-y-4">
                 <div className="flex items-center gap-3">
-                  <format.icon className="h-8 w-8 text-primary" />
-                  <h3 className="text-xl font-semibold">{format.name}</h3>
+                  <format.icon className="h-6 w-6 text-primary sm:h-8 sm:w-8" />
+                  <h3 className="text-lg font-semibold sm:text-xl">{format.name}</h3>
                 </div>
-                <p className="text-muted-foreground">{format.description}</p>
+                <p className="text-sm text-muted-foreground sm:text-base">{format.description}</p>
                 <div>
-                  <h4 className="font-semibold mb-2 text-sm">Command</h4>
+                  <h4 className="font-semibold mb-2 text-xs sm:text-sm">Command</h4>
                   <CodeBlock language="bash" code={format.command} />
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-2 text-sm">Example Output</h4>
+                  <h4 className="font-semibold mb-2 text-xs sm:text-sm">Example Output</h4>
                   <CodeBlock language={format.name === "JSON" ? "json" : "markdown"} code={format.example} />
                 </div>
               </div>

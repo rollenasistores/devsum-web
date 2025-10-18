@@ -36,8 +36,8 @@ export function CodeBlock({ code, language = "bash" }: CodeBlockProps) {
           )}
         </Button>
       </div>
-      <pre className="overflow-x-auto p-4">
-        <code className="font-mono text-sm text-foreground">{code}</code>
+      <pre className="overflow-x-auto p-4 max-w-full">
+        <code className="font-mono text-sm text-foreground whitespace-pre-wrap break-words">{code}</code>
       </pre>
     </div>
   )
