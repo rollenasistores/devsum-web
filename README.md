@@ -5,9 +5,9 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Next.js](https://img.shields.io/badge/Next.js-15.2.4-black?logo=next.js)](https://nextjs.org/)
 
-> Transform your git commits into professional accomplishment reports with the power of AI
+> Automate your Git workflow with AI-powered commits, branch management, and professional reports
 
-This is the web documentation and landing page for DevSum CLI, a powerful command-line tool that automatically generates professional accomplishment reports from your git commit history using AI.
+This is the web documentation and landing page for DevSum CLI, a powerful command-line tool that automates your Git workflow with AI-powered commit messages, smart branch management, and generates professional accomplishment reports from your git commit history.
 
 ## 🚀 Quick Start
 
@@ -25,8 +25,9 @@ For more information about the CLI tool, visit the [main DevSum repository](http
 
 ## 🎯 What is DevSum?
 
-DevSum CLI is a powerful command-line tool that automatically generates professional accomplishment reports from your git commit history using AI. Perfect for:
+DevSum CLI is a powerful command-line tool that automates your Git workflow with AI-powered commit messages, smart branch management, and generates professional accomplishment reports. Perfect for:
 
+- ⚡ **Workflow Automation** - AI-powered commits and branch management
 - 📊 **Performance Reviews** - Showcase your technical contributions
 - 🎯 **Sprint Reports** - Summarize team accomplishments
 - 📝 **Project Updates** - Keep stakeholders informed
@@ -34,12 +35,14 @@ DevSum CLI is a powerful command-line tool that automatically generates professi
 
 ## ✨ Features
 
-### 🤖 AI-Powered Analysis
+### 🤖 AI-Powered Workflow
 
+- Smart commit message generation
+- Conventional commit format (feat:, fix:, docs:)
+- Automatic branch naming and management
 - Smart commit summarization
 - Achievement extraction
 - Technical insight generation
-- Actionable recommendations
 
 ### 📊 Multiple Output Formats
 

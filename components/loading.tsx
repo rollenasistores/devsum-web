@@ -14,6 +14,17 @@ export function Loading({ className = "", onComplete }: LoadingProps) {
   const [isPageLoaded, setIsPageLoaded] = useState(false)
   const [startTime, setStartTime] = useState<number | null>(null)
   const [shouldSkipLoading, setShouldSkipLoading] = useState(false)
+  const [starPositions, setStarPositions] = useState<Array<{ left: number; top: number; delay: number }>>([])
+
+  useEffect(() => {
+    // Generate star positions on client side to avoid hydration mismatch
+    const positions = Array.from({ length: 20 }).map(() => ({
+      left: Math.random() * 100,
+      top: Math.random() * 100,
+      delay: Math.random() * 2
+    }))
+    setStarPositions(positions)
+  }, [])
 
   useEffect(() => {
     // Check if user came from docs page
@@ -78,13 +89,13 @@ export function Loading({ className = "", onComplete }: LoadingProps) {
     <div className={`fixed inset-0 bg-background z-[9999] flex items-center justify-center ${className}`}>
       {/* Animated background stars */}
       <div className="absolute inset-0 overflow-hidden">
-        {Array.from({ length: 20 }).map((_, i) => (
+        {starPositions.map((position, i) => (
           <motion.div
             key={i}
             className="absolute w-1 h-1 bg-primary/60 rounded-full"
             style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
+              left: `${position.left}%`,
+              top: `${position.top}%`,
             }}
             animate={{
               opacity: [0, 1, 0],
@@ -92,7 +103,7 @@ export function Loading({ className = "", onComplete }: LoadingProps) {
             }}
             transition={{
               duration: 2,
-              delay: Math.random() * 2,
+              delay: position.delay,
               repeat: Infinity,
               ease: "easeInOut"
             }}

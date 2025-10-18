@@ -36,12 +36,12 @@ export function HeroSection() {
                 variants={fadeInUp}
               >
                   <TypewriterText
-                    text="Transform Git Commits into Professional Reports"
+                    text="Smart Git Commits, Branch Management & Reports"
                     speed={5}
                     delay={50}
                     className="text-foreground break-words"
                     loop={true}
-                    highlightWords={["Git Commits"]}
+                    highlightWords={["Git Commits", "Branch Management", "Reports"]}
                     highlightClassName="text-primary font-bold bg-primary/10 px-1 py-0.5 sm:px-2 sm:py-1 rounded-md sm:rounded-lg break-words"
                   />
               </motion.h1>
@@ -50,8 +50,7 @@ export function HeroSection() {
             className="mt-2 text-xs leading-relaxed text-muted-foreground text-pretty sm:mt-3 sm:text-sm md:text-base lg:text-lg max-w-sm sm:max-w-md lg:max-w-lg mx-auto break-words"
             variants={fadeInUp}
           >
-            DevSum CLI uses AI to analyze your git history and generate polished accomplishment summaries. Perfect for
-            performance reviews, sprint reports, and project updates.
+            DevSum CLI revolutionizes your Git workflow with AI-powered commit messages, intelligent branch management, and automated report generation. Streamline your development process while creating professional documentation effortlessly.
           </motion.p>
 
           <motion.div 
@@ -127,7 +126,7 @@ export function HeroSection() {
         </motion.div>
 
         <motion.div 
-          className="mx-auto mt-4 max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-3xl xl:max-w-4xl sm:mt-8 lg:mt-12 xl:mt-16 mt-10"
+          className="mx-auto max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-3xl xl:max-w-4xl sm:mt-8 lg:mt-12 xl:mt-16 mt-10"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

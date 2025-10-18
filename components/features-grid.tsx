@@ -1,11 +1,26 @@
 "use client"
 
 import { Card } from "@/components/ui/card"
-import { Sparkles, Zap, FileText, Filter, Workflow, Palette } from "lucide-react"
+import { Sparkles, Zap, FileText, Filter, Workflow, Palette, GitBranch, MessageSquare } from "lucide-react"
 import { motion } from "framer-motion"
 import { scrollReveal, staggerCards, staggerCard, hoverLift, hoverGlow, breathe } from "@/lib/animations"
 
 const features = [
+  {
+    icon: MessageSquare,
+    title: "Smart Commit Messages",
+    description: "AI generates conventional commit messages (feat:, fix:, docs:) with detailed descriptions of your changes.",
+  },
+  {
+    icon: GitBranch,
+    title: "Branch Automation",
+    description: "Auto-generate branch names, easy switching, and conflict prevention. Never worry about branch management again.",
+  },
+  {
+    icon: Workflow,
+    title: "Automated Workflows",
+    description: "Full automation: add files, commit, push, and generate reports. Integrate with CI/CD pipelines seamlessly.",
+  },
   {
     icon: Sparkles,
     title: "AI-Powered Analysis",
@@ -25,11 +40,6 @@ const features = [
     icon: Zap,
     title: "Lightning Fast",
     description: "Optimized performance with caching and parallel processing. Analyze thousands of commits in seconds.",
-  },
-  {
-    icon: Workflow,
-    title: "Automated Workflows",
-    description: "Integrate with CI/CD pipelines. Generate reports automatically on schedule or trigger.",
   },
   {
     icon: Palette,
